@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:ignore="MissingDefaultResource">
+
+    <RadioGroup
+        android:id="@+id/rgSortingGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbSortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by DESC" />
+
+        <RadioButton
+            android:id="@+id/rbSortAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by ASC" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgSortingGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
